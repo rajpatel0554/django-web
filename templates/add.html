@@ -1,0 +1,34 @@
+{% if messages %}
+<div style="background-color: aqua;">
+    {% for message in messages %}
+    {{message}}
+    {% endfor %}
+</div>
+{% endif %}
+<style>
+    *{
+        background-color: bisque;
+    }
+</style>
+
+
+
+<center>
+<h2>Add Student</h2>
+<style>
+    .errorlist{
+        color: red;
+    }
+</style>
+
+
+
+
+
+<form method="post" novalidate>
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="save">
+</form>
+{% include 'menu.html'%}
+</center>

@@ -1,6 +1,18 @@
+<style>
+    *{
+        background-color: bisque;
+    }
+</style>
+<center>
 <form method="post" action="/process">
     {% csrf_token %}
     No1 : <input type="text" name="txt1">
+    <br>
+    <br>
     No2 : <input type="text" name="txt2">
+    <br>
+    <br>
     <input type="submit">
 </form>
+{% include 'menu.html'%}
+</center>

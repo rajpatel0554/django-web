@@ -1,10 +1,22 @@
+<style>
+    *{background-color: bisque;
+    }
+</style>
+<center>
 <form method="post" action="/sum">
     {% csrf_token %}
     sub1 : <input type="text" name="sub1"><br>
+    <br>
     sub2 : <input type="text" name="sub2" ><br>
+    <br>
     sub3 : <input type="text" name="sub3" ><br>
+    <br>
     sub4 : <input type="text" name="sub4" ><br>
+    <br>
     sub5 : <input type="text" name="sub5" ><br>
+    <br>
     <input type="submit">
 
 </form>
+{% include 'menu.html'%}
+</center>
